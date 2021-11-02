@@ -1,1 +1,22 @@
+#navbar {
+    width: auto;
+    border: 5px solid black;
+}
+
+a {  
+    text-decoration: none;
+    color: black;
+
+}
+
+/* Trying to give navbar a background color */
+#navbar {
+  
+}
+
+#navbar_list li {
+    margin: 50px;
+    display: inline;
+}
+
 
