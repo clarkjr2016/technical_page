@@ -1,22 +1,62 @@
-#navbar {
-    width: auto;
-    border: 5px solid black;
+* {
+    box-sizing: border-box;
 }
 
-a {  
+body {
+    background-color: #224055;
+    margin: 0;
+}
+
+#navbar {
+    background-color: #007CC7;
+}
+
+#navbar_list {
+    background-color: #4DA8DA;
+}
+
+#navbar li {
+    display: inline-flex;
+    margin-right: 10px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.nav-link {
     text-decoration: none;
     color: black;
+    padding: 10px;
 
 }
 
-/* Trying to give navbar a background color */
-#navbar {
-  
+a:hover {
+    background-color: lightblue;
+
 }
 
-#navbar_list li {
-    margin: 50px;
-    display: inline;
+.main-section {
+    background-color: #12232E;
+    padding-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    color: whitesmoke;
+}
 
+@media only screen and (min-width: 992px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        /* All the properties here combined with the fact that I wrapped a div element "main-content" around the <main> element and utilized the position property to manipulate" */
+        /* This is the url I used to solve this issue I was having https://www.youtube.com/watch?v=2K9aNCS8iAI */
+    }
+
+    #main-content {
+        margin-left: 250px; /* Setting the margin of this container to 250px to compensate for the the width of the nav container is what allowed me to be successful in this project! */
+        padding: 10px;
+    }
+}
